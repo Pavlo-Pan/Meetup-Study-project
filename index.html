@@ -17,82 +17,85 @@
 
 <body>
     <header>
-        <div><a href="#"><img src="img/meetup.svg" alt="" id="header-logo"></a>
-            <form action="search" id="header-form-search">
-                <input type="text" placeholder="Search events" id="header-input-events-search">
-                <input type="text" placeholder="Mountain View, CA" id="header-input-place-search">
-                <button type="submit"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0898 6.75C12.0898 9.51142 9.85126 11.75 7.08984 11.75C4.32842 11.75 2.08984 9.51142 2.08984 6.75C2.08984 3.98857 4.32842 1.75 7.08984 1.75C9.85126 1.75 12.0898 3.98857 12.0898 6.75ZM13.3398 6.75C13.3398 10.2017 10.5416 13 7.08984 13C3.63806 13 0.839844 10.2017 0.839844 6.75C0.839844 3.29822 3.63806 0.5 7.08984 0.5C10.5416 0.5 13.3398 3.29822 13.3398 6.75ZM12.0646 12.6086L11.6372 12.1812C11.9571 11.9131 12.2529 11.6173 12.521 11.2973L12.9484 11.7247L15.4484 14.2247C15.6925 14.4688 15.6925 14.8645 15.4484 15.1086C15.2043 15.3527 14.8087 15.3527 14.5646 15.1086L12.0646 12.6086Z" fill="white"/>
-                    </svg></button>
-            </form>
-        </div>
-        <div>
-            <button id="header-btn-language"><img src="img/worldgrid.svg" alt=""><span> English</span></button>
-            <div id="language-menu" class="language-menu">
-                <button data-lang="en">English</button>
-                <button data-lang="de">Deutsch</button>
-                <button data-lang="fr">Français</button>
-                <button data-lang="es">Español</button>
-                <button data-lang="ru">Русский</button>
+        <nav>
+            <div><a href="#"><img src="img/meetup.svg" alt="" id="header-logo"></a>
+                <form action="search" id="header-form-search">
+                    <input type="text" placeholder="Search events" id="header-input-events-search">
+                    <input type="text" placeholder="Mountain View, CA" id="header-input-place-search">
+                    <button type="submit"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0898 6.75C12.0898 9.51142 9.85126 11.75 7.08984 11.75C4.32842 11.75 2.08984 9.51142 2.08984 6.75C2.08984 3.98857 4.32842 1.75 7.08984 1.75C9.85126 1.75 12.0898 3.98857 12.0898 6.75ZM13.3398 6.75C13.3398 10.2017 10.5416 13 7.08984 13C3.63806 13 0.839844 10.2017 0.839844 6.75C0.839844 3.29822 3.63806 0.5 7.08984 0.5C10.5416 0.5 13.3398 3.29822 13.3398 6.75ZM12.0646 12.6086L11.6372 12.1812C11.9571 11.9131 12.2529 11.6173 12.521 11.2973L12.9484 11.7247L15.4484 14.2247C15.6925 14.4688 15.6925 14.8645 15.4484 15.1086C15.2043 15.3527 14.8087 15.3527 14.5646 15.1086L12.0646 12.6086Z" fill="white" />
+                        </svg></button>
+                </form>
             </div>
-            <button id="header-btn-log-in">Log in</button>
-            <form id="login" class="form-block">
-                <div class="block-inputs">
-                    <div class="item-input">
-                        <label for="userEmailFormLogin">Email</label>
-                        <input type="email" name="userEmailLogin" id="userEmailFormLogin" required>
-                    </div>
-    
-                    <div class="item-input">
-                        <label for="userPasswordFormLogin">Password</label>
-                        <input type="password" name="userPasswordLogin" id="userPasswordFormLogin" required>
-                    </div>
+            <div>
+                <button id="header-btn-language"><img src="img/worldgrid.svg" alt=""><span> English</span></button>
+                <div id="language-menu" class="language-menu">
+                    <button data-lang="en">English</button>
+                    <button data-lang="de">Deutsch</button>
+                    <button data-lang="fr">Français</button>
+                    <button data-lang="es">Español</button>
+                    <button data-lang="ru">Русский</button>
                 </div>
-    
-                <div class="block-submit">
-                    <input type="submit" value="Log in">
-                </div>
-            </form>
+                <button id="header-btn-log-in">Log in</button>
+                <form id="login" class="form-block">
+                    <div class="block-inputs">
+                        <div class="item-input">
+                            <label for="userEmailFormLogin">Email</label>
+                            <input type="email" name="userEmailLogin" id="userEmailFormLogin" required>
+                        </div>
 
-            <button id="header-btn-sign-up">Sign up</button>
-            <form id="register" class="form-block">
-                <div class="block-inputs">
-                    <div class="item-input">
-                        <label for="userNameForm">Name</label>
-                        <input type="text" name="userName" id="userNameForm" required> <!-- minlength="2" maxlength="24" pattern="/^[A-Za-zА-Яа-яЁё]+$/" -->
+                        <div class="item-input">
+                            <label for="userPasswordFormLogin">Password</label>
+                            <input type="password" name="userPasswordLogin" id="userPasswordFormLogin" required>
+                        </div>
                     </div>
-    
-                    <div class="item-input">
-                        <label for="phoneUserForm">Telephone</label>
-                        <input type="tel" name="phoneUser" id="phoneUserForm" required> <!-- pattern="/^\+\d{8,12}$/" -->
+
+                    <div class="block-submit">
+                        <input type="submit" value="Log in">
                     </div>
-    
-                    <div class="item-input">
-                        <label for="userEmailForm">Email</label>
-                        <input type="email" name="userEmail" id="userEmailForm" required><!--  minlength="7" pattern="/^[^\s@]+@[^\s@]+\.[^\s@]+$/" -->
+                </form>
+
+                <button id="header-btn-sign-up">Sign up</button>
+                <form id="register" class="form-block">
+                    <div class="block-inputs">
+                        <div class="item-input">
+                            <label for="userNameForm">Name</label>
+                            <input type="text" name="userName" id="userNameForm" required> <!-- minlength="2" maxlength="24" pattern="/^[A-Za-zА-Яа-яЁё]+$/" -->
+                        </div>
+
+                        <div class="item-input">
+                            <label for="phoneUserForm">Telephone</label>
+                            <input type="tel" name="phoneUser" id="phoneUserForm" required> <!-- pattern="/^\+\d{8,12}$/" -->
+                        </div>
+
+                        <div class="item-input">
+                            <label for="userEmailForm">Email</label>
+                            <input type="email" name="userEmail" id="userEmailForm" required><!--  minlength="7" pattern="/^[^\s@]+@[^\s@]+\.[^\s@]+$/" -->
+                        </div>
+
+                        <div class="item-input">
+                            <label for="userPasswordForm">Password</label>
+                            <input type="password" name="userPassword" id="userPasswordForm" required> <!-- minlength="5" maxlength="26" -->
+                        </div>
                     </div>
-    
-                    <div class="item-input">
-                        <label for="userPasswordForm">Password</label>
-                        <input type="password" name="userPassword" id="userPasswordForm" required> <!-- minlength="5" maxlength="26" -->
+                    <div class="block-submit">
+                        <input type="submit" value="Sign up">
                     </div>
+                </form>
+            </div>
+            <div class="cookie-consent" id="cookieConsent">
+                <div id="cookiesText">
+                    <h3>Cookies</h3>
+                    <p>We use cookies to provide visitors with the best possible experience on our website. These include analytics, functionality, and targeting cookies, which may also be used in our
+                        marketing efforts. Click the button to agree to the use of cookies or click ‘Cookie settings’ to manage your preferences. <button>Cookies Policy</button></p>
                 </div>
-                <div class="block-submit">
-                    <input type="submit" value="Sign up">
-                </div></form>
-        </div>
-        <div class="cookie-consent" id="cookieConsent">
-            <div id="cookiesText">
-                <h3>Cookies</h3>
-                <p>We use cookies to provide visitors with the best possible experience on our website. These include analytics, functionality, and targeting cookies, which may also be used in our
-                    marketing efforts. Click the button to agree to the use of cookies or click ‘Cookie settings’ to manage your preferences. <button>Cookies Policy</button></p>
+                <div id="cookiesButtonDiv">
+                    <a href="#">Cookie settings</a>
+                    <button class="accept">Accept</button>
+                    <button class="reject">Reject</button>
+                </div>
             </div>
-            <div id="cookiesButtonDiv">
-                <a href="#">Cookie settings</a>
-                <button class="accept">Accept</button>
-                <button class="reject">Reject</button>
-            </div>
-        </div>
+        </nav>
     </header>
     <div id="container-for-center">
         <main>
@@ -148,15 +151,16 @@
             <div class="turquoise-block">
                 <h2>Join Meetup</h2>
                 <div class="turquoise-block-content-img">
-                <div class="turquoise-block-content">
-                    
-                    <p>People use Meetup to meet new people, learn new things, find support, get out of their
-                        comfort zones, and pursue their passions, together. Membership is free.</p>
-                    <button >Sign up</button>
+                    <div class="turquoise-block-content">
 
+                        <p>People use Meetup to meet new people, learn new things, find support, get out of their
+                            comfort zones, and pursue their passions, together. Membership is free.</p>
+                        <button>Sign up</button>
+
+                    </div>
+                    <img src="img/hands.png" alt="">
                 </div>
-                <img src="img/hands.png" alt="">
-            </div></div>
+            </div>
             <div class="categories">
                 <h2>Explore top categories</h2>
                 <div class="categories-content">
